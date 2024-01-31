@@ -1,9 +1,14 @@
+"use client"
+import {useState} from "react";
+import MyButton from "./Mybutton";
+
 
     
     const Feed = () => {
+     
       return (
-        <div className="desc text-center">Advancements in client-side development have led to the widespread adoption of JavaScript frameworks and libraries. React, Angular, and Vue.js exemplify the shift towards component-based architectures, facilitating modular and maintainable code. </div>
-      )
+     <p>Feed</p>
+        )
     }
     
-    export default Feed
+    export default Feed;
