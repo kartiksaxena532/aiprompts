@@ -1,7 +1,7 @@
 "use client"
 import Feed from '@components/Feed';
 import Nav from '@components/Nav';
-import MyButton from '@components/MyButton';
+import UseEffectHook from '@components/UseEffectHook';
 import {useState} from "react";
 
 const Home = () => {
@@ -34,7 +34,11 @@ const Home = () => {
     </button>
         </div>
      
-      
+      <UseContextHook/>
+      <UseEffectHook/>
+     
+
+
       
     </section>
   )
