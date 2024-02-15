@@ -2,6 +2,8 @@
 import Feed from '@components/Feed';
 import Nav from '@components/Nav';
 import UseEffectHook from '@components/UseEffectHook';
+import UseContextHook from '@components/UseContextHook';
+import UseStatenew from '@components/UseStatenew';
 import {useState} from "react";
 
 const Home = () => {
@@ -36,9 +38,7 @@ const Home = () => {
      
       <UseContextHook/>
       <UseEffectHook/>
-     
-
-
+     <UseStatenew/>
       
     </section>
   )
