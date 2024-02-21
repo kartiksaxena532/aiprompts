@@ -1,7 +1,13 @@
+"use client"
 import React from 'react'
+ 
 
-export const Feed = () => {
+const Feed = () => {
+
   return (
-    <div>Feed</div>
-  )
+<p> New</p>
+
+  );
 }
+
+export default Feed;

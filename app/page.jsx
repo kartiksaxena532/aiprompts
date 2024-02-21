@@ -2,7 +2,7 @@
 import Feed from '@components/Feed';
 import Nav from '@components/Nav';
 import UseEffectHook from '@components/UseEffectHook';
-import UseContextHook from '@components/UseContextHook';
+
 import UseStatenew from '@components/UseStatenew';
 import {useState} from "react";
 
@@ -15,6 +15,7 @@ const Home = () => {
     settoggleText(!toggleText);
   }
   return (
+    <>
     <section className="w-full flex-center flex-col">
       <h1 className="head_text text-center">
         I Will Dockerize
@@ -23,7 +24,7 @@ const Home = () => {
 
       </h1>
     
-     <p className="desc text-center"> Web development has evolved into a dynamic field, continually shaped by technological advancements and user expectations. This scientific exploration delves into the multifaceted realm of web development, unraveling the underlying principles and emerging technologies that drive this ever-changing landscape. </p>
+     <p className=" text-2xl justify-center text-justify m-10  "> Web development has evolved into a dynamic field, continually shaped by technological advancements and user expectations. This scientific exploration delves into the multifaceted realm of web development, unraveling the underlying principles and emerging technologies that drive this ever-changing landscape. </p>
     {/*feed*/}
     <div>
         {
@@ -36,11 +37,12 @@ const Home = () => {
     </button>
         </div>
      
-      <UseContextHook/>
+      
       <UseEffectHook/>
      <UseStatenew/>
-      
+      <Feed/>
     </section>
+    </>
   )
 }
 
