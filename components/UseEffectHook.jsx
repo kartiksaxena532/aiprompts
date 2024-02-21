@@ -10,13 +10,22 @@ const [count, setCount] =  useState(0);
 
 const [showtext, isShowtext] = useState(false);
 
+const [productlist , setProductlist] = useState([]);
 
+async function fetchallproducts(){
+  try{
+    const res = await fetch('https://dummyjson.com/products')
+  const data = await res.json()
+  console.log(data);
+  }catch(error){
+    console.log(error);
+  
+  }
+}
 useEffect(()=>{
   if (count===5){
     isShowtext(true);
-  }
-  else if (count ===7){
-    isShowtext(false);
+                
   }
 },[count])
 
