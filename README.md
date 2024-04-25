@@ -19,3 +19,6 @@ CMD ["npm", "run" ,"dev"] // command
 docker build -t welcome-to-docker .
 
 docker run -p 3000.3000 welcome-to-docker
+
+you can also upload the docker image to the acorn server which can help you if you update the docker image the 
+hosted one will be automatically updated.
